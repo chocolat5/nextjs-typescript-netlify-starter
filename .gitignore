@@ -31,3 +31,7 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import { css } from '@emotion/react'
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
 
       <main>
         <Header title="Welcome to my app!" />
-        <p className="description">
+        <p css={desc}>
           Get started by editing <code>pages/index.js</code>
         </p>
       </main>
@@ -21,3 +22,7 @@ export default function Home() {
     </div>
   )
 }
+
+const desc = css`
+  color: green;
+`
